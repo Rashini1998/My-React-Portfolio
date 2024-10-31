@@ -1,76 +1,109 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/Project1.png";
+import project2 from "../assets/projects/Project2.png";
+import project3 from "../assets/projects/Project3.png";
+import project4 from "../assets/projects/Project4.png";
+import project5 from "../assets/projects/Project5.png";
+import project6 from "../assets/projects/Project6.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web and mobile applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and React Native, as well as back-end technologies like Node.js, Java, MySQL, MariaDB, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `A conscientious undergraduate, I possess a strong work ethic, dedication, and a proactive approach to learning. With a keen interest in software engineering, I am eager to tackle challenges, expand my skills, and contribute to innovative projects. Known for my collaborative spirit and leadership qualities, I am ready to seize opportunities for professional growth and make a meaningful impact in the field.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
+    year: "2024 Aug - Present",
     role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    company: "Prostyle Technology ",
+    description: `Contributed to the development of web applications using PHP, CodeIgniter, and Bootstrap and managed databases. Worked closely with product managers to prioritize features and enhancements.`,
+    technologies: ["PHP", "CodeIgniter", "Bootstrap"],
+  },
+  {
+    year: "2023 Jan - 2023 Jul",
+    role: "Software Engineer Intern",
+    company: "WSO2 ",
+    description: `Designed and developed user interfaces for web applications using React.js and Bootstrap. Worked closely with backend developers to integrate frontend components with Java. Implemented responsive designs and optimized frontend performance.`,
+    technologies: ["React.js", "Java", "WSO2 Base Products", "GitHub","Siddhi"],
+  },
+];
+
+export const EDUCATION = [
+  {
+    year: "2020 - 2024",
+    Institute: "University of Moratuwa - Faculty of Information Technology",
+    Degree:"B.Sc (Hons) in Information Technology",
+    class: "First Class Honours (3.78/4.00)",
+    Skills: ["Natural Language Processing", "Artificial Intelligence","Logic Programming & Artificial Cognitive Systems"," Data Structures & Algorithms"," Advanced Database Management Systems"," Bioinformatics ", "Computer Networks"," Digital Image Processing "," Operational Research"," IT Quality Assurance"," Cluster Computing " , "Enterprise Application Development", "High Performance Computing"," Data Mining & Data Warehousing"," Supply Chain Management"," Web Development & Mobile App Development"," Multimedia Technologies ", " Calculus & Statistical Distributions"," Object Oriented Analysis and Design"," Object- Oriented Programming"],
+  },
+  {
+    year: "2019 - 2020",
+    Institute: "IJSE-Institute of Software Engineering",
+    Degree: "Comprehensive Master Java Developer ",
+    class: "Deploma Completion",
+    Skills: ["Java", "Object-Oriented Programming (OOP)", "MySQL"],
+  },
+  {
+    year: "2015 - 2018",
+    Institute: "Devi Balika Vidyalaya - Colombo 08",
+    Degree: "GCE Advanced Level (2018)",
+    class: "Z Score - 1.612",
+    Skills: ["Chemistry A", "Combined Mathematics B", "Physics B"],
+  },
+  {
+    year: "2009 - 2014",
+    Institute: "Devi Balika Vidyalaya - Colombo 08",
+    Degree: "GCE Ordinary Level (2014)",
+    class: "Results - 9As",
+    Skills: ["Sinhala ", "Buddhism", "English language","Mathematics","Science","History ","Eastern Dancing","Health & Physical Education","Japanese Language"],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Storytelling Application for the Deaf Children Using Sri Lankan Sign Language",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "The project introduces a storytelling app using Sri Lankan sign language to assist deaf children with communication and literacy needs, utilizing NLP and computer vision technologies.",
+    technologies: ["Python", "Natural Language Processing", "Image Processing"],
   },
   {
-    title: "Task Management App",
+    title: "GramaCheck",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "GramaCheck, a web-based platform, simplifies the Grama Certification process by integrating advanced technology and user-friendly design, improving efficiency for both applicants and Grama Niladhari.",
+    technologies: ["React.js", "Bootstrap"],
   },
   {
-    title: "Portfolio Website",
+    title: "Road Traffic Accidents Data Analysis",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "The project involves analyzing road traffic accident data to identify patterns and distribution, providing data-driven recommendations for improved road safety through specific sub-projects and collaboration.",
+    technologies: ["Python"],
   },
   {
-    title: "Blogging Platform",
+    title: "DY Tracker",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "DY Tracker is a software system having a web application and a mobile application that is developed to provide a solution for the problem of lack of connectivity with the target customer base of the dynamic sellers.",
+    technologies: ["React.js", "React Native", "Node.js", "MariaDB", "Express.js "],
+  },
+  {
+    title: "Automatic whiteboard writer and eraser",
+    image: project5,
+    description:
+      "The project aims to design a low-cost, high-accuracy automated device for drawing circuits and cleaning large whiteboards, using G code stored on a micro SD card.",
+    technologies: ["C Language"],
+  },
+  {
+    title: "Student Information Management System",
+    image: project6,
+    description:
+      "Student Information Management System is a web application for managing student details. Staff can log in to add, view, update, and delete student information. It uses ReactJS and MySQL for secure and efficient data management.",
+    technologies: ["React.js", "Node.js", "MySQL", "Express.js"],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "No.140/8, Lakbima Niwasa, Aramanagolla, Horana. ",
+  phoneNo: "+94 770 617 605 ",
+  email: "gamalathrashini@gmail.com",
 };
