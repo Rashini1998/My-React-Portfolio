@@ -17,83 +17,218 @@ import { GrGithub } from "react-icons/gr"
 import { FaJira } from "react-icons/fa6"
 import { SiXampp } from "react-icons/si"
 import { FiFigma } from "react-icons/fi"
+import { motion } from "framer-motion"
+
+
+const iconVariants = (duration) => ({
+    initial: { y: -10 },
+    animate: {
+        y: [10, -10],
+        transition: {
+            duration: duration,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+        },
+    },
+});
 
 const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-24">
-            <h2 className="my-20 text-center text-4xl">Technologies</h2>
-            <h4 className="my-20 text-center text-2xl text-neutral-500">Programming Languages</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4 ">
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+            <motion.h2
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5 }}
+                className="my-20 text-center text-4xl">Technologies</motion.h2>
+            <motion.h4
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="my-20 text-center text-2xl text-neutral-500">Programming Languages</motion.h4>
+            <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+                className="flex flex-wrap items-center justify-center gap-4 ">
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FaCode className="text-7xl text-blue-600" title="C Language" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(3)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FaJava className="text-7xl text-[#5382A1]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FaPython className="text-7xl text-[#3776AB]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(2)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <DiJavascript className="text-7xl text-[#F7DF1E]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(6)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FaPhp className="text-7xl text-[#777BB4]" />
-                </div>
-            </div>
-            <h4 className="my-20 text-center text-2xl text-neutral-500">Web Development</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+            </motion.div>
+            <motion.h4
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="my-20 text-center text-2xl text-neutral-500">Web Development</motion.h4>
+            <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+
+                className="flex flex-wrap items-center justify-center gap-4">
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <FaHtml5 className="text-7xl text-[#E34F26]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(3)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <FaCss3 className="text-7xl text-[#1572B6]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(4)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <RiReactjsLine className="text-7xl text-cyan-400" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <FaNodeJs className="text-7xl text-[#339933]" />
-                </div>
-            </div>
-            <h4 className="my-20 text-center text-2xl text-neutral-500">Mobile App Development</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+            </motion.div>
+            <motion.h4
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="my-20 text-center text-2xl text-neutral-500">Mobile App Development</motion.h4>
+            <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+
+                className="flex flex-wrap items-center justify-center gap-4">
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <TbBrandReactNative className="text-7xl text-cyan-400" />
-                </div>
-            </div>
-            <h4 className="my-20 text-center text-2xl text-neutral-500">Database</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+            </motion.div>
+            <motion.h4
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="my-20 text-center text-2xl text-neutral-500">Database</motion.h4>
+            <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+                className="flex flex-wrap items-center justify-center gap-4">
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    animate="animate"
+                    initial="initial"
+
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <DiMysql className="text-7xl text-[#4479A1]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(4)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <TbSql className="text-7xl text-[#CC2927]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <SiMariadb className="text-7xl text-[#003545]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(2)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <DiMongodb className="text-7xl text-[#47A248]" />
-                </div>
-            </div>
-            <h4 className="my-20 text-center text-2xl text-neutral-500">Tools</h4>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+            </motion.div>
+            <motion.h4
+                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="my-20 text-center text-2xl text-neutral-500">Tools</motion.h4>
+            <motion.div
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -100 }}
+                transition={{ duration: 1.5 }}
+                className="flex flex-wrap items-center justify-center gap-4">
+                <motion.div
+                    variants={iconVariants(2)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <SiPostman className="text-7xl text-[#FF6C37]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(3.5)}
+                    animate="animate"
+                    initial="initial"
+                    className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <GrGithub className="text-7xl text-[#181717]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(5)}
+                    animate="animate"
+                    initial="initial" className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FaJira className="text-7xl text-[#0052CC]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(4)}
+                    animate="animate"
+                    initial="initial" className="rounded-2xl border-4 border-neutral-800 p-4 bg-cyan-50">
                     <SiXampp className="text-7xl text-[#FB7A24]" />
-                </div>
-                <div className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
+                </motion.div>
+                <motion.div
+                    variants={iconVariants(2.5)}
+                    animate="animate"
+                    initial="initial" className="rounded-2xl border-4 border-neutral-800 p-4  bg-cyan-50">
                     <FiFigma className="text-7xl text-[#F24E1E]" />
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
