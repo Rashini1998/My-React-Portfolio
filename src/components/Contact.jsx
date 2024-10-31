@@ -33,7 +33,7 @@ const Contact = () => {
                 <motion.a
                 whileHover={{ scale: 1.2 }}
                  whileTap={{ scale: 0.8 }}
-                    href="assets/doc/Rashini Sathsarani Gamalath.pdf"
+                     href="/Rashini Sathsarani Gamalath.pdf"
                     download
                     target="_blank"
                     className="mt-5 inline-block px-6 py-2 text-white bg-purple-600 rounded-lg font-semibold hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
