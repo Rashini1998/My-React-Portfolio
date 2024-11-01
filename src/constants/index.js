@@ -64,6 +64,7 @@ export const PROJECTS = [
     description:
       "The project introduces a storytelling app using Sri Lankan sign language to assist deaf children with communication and literacy needs, utilizing NLP and computer vision technologies.",
     technologies: ["Python", "Natural Language Processing", "Image Processing"],
+    githubLink: "https://github.com/Storytelling-for-Deaf/Picture-Story-Dataset",
   },
   {
     title: "GramaCheck",
@@ -71,6 +72,7 @@ export const PROJECTS = [
     description:
       "GramaCheck, a web-based platform, simplifies the Grama Certification process by integrating advanced technology and user-friendly design, improving efficiency for both applicants and Grama Niladhari.",
     technologies: ["React.js", "Bootstrap"],
+    githubLink:"https://github.com/Rashini1998/GramaCheck_Frontend-1",
   },
   {
     title: "Road Traffic Accidents Data Analysis",
@@ -78,6 +80,7 @@ export const PROJECTS = [
     description:
       "The project involves analyzing road traffic accident data to identify patterns and distribution, providing data-driven recommendations for improved road safety through specific sub-projects and collaboration.",
     technologies: ["Python"],
+    githubLink:"https://github.com/Rashini1998/Road-Traffic-Accidents-Severity-Prediction",
   },
   {
     title: "DY Tracker",
@@ -85,6 +88,7 @@ export const PROJECTS = [
     description:
       "DY Tracker is a software system having a web application and a mobile application that is developed to provide a solution for the problem of lack of connectivity with the target customer base of the dynamic sellers.",
     technologies: ["React.js", "React Native", "Node.js", "MariaDB", "Express.js "],
+    githubLink:"#"
   },
   {
     title: "Automatic whiteboard writer and eraser",
@@ -92,6 +96,7 @@ export const PROJECTS = [
     description:
       "The project aims to design a low-cost, high-accuracy automated device for drawing circuits and cleaning large whiteboards, using G code stored on a micro SD card.",
     technologies: ["C Language"],
+    githubLink:"https://github.com/Rashini1998/Automatic-whiteboard-writer-and-eraser"
   },
   {
     title: "Student Information Management System",
@@ -99,6 +104,7 @@ export const PROJECTS = [
     description:
       "Student Information Management System is a web application for managing student details. Staff can log in to add, view, update, and delete student information. It uses ReactJS and MySQL for secure and efficient data management.",
     technologies: ["React.js", "Node.js", "MySQL", "Express.js"],
+    githubLink:"https://github.com/Rashini1998/ABC_College-Web_App"
   },
 ];
 
