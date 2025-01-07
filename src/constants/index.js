@@ -4,6 +4,8 @@ import project3 from "../assets/projects/Project3.png";
 import project4 from "../assets/projects/Project4.png";
 import project5 from "../assets/projects/Project5.png";
 import project6 from "../assets/projects/Project6.png";
+import project7 from "../assets/projects/Project7.png";
+import project8 from "../assets/projects/Project8.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web and mobile applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and React Native, as well as back-end technologies like Node.js, Java, MySQL, MariaDB, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -105,6 +107,22 @@ export const PROJECTS = [
       "Student Information Management System is a web application for managing student details. Staff can log in to add, view, update, and delete student information. It uses ReactJS and MySQL for secure and efficient data management.",
     technologies: ["React.js", "Node.js", "MySQL", "Express.js"],
     githubLink:"https://github.com/Rashini1998/ABC_College-Web_App"
+  },
+  {
+    title: "Blog Management System",
+    image: project7,
+    description:
+      "Blog Management System is a web application that is used to manage the blog posts. User can login to the web app and can add, view, edit and delete the blog posts.",
+    technologies: ["CodeIgniter","Tailwind"],
+    githubLink:"https://github.com/Rashini1998/Blog-Management-System-with-Tailwind"
+  },
+  {
+    title: "Resto-App-VueJS",
+    image: project8,
+    description:
+      "Resto-App-VueJS is a web application that is used to manage the restaurants. User can Signup and login to the web app and can add, view, edit and delete the restaurants.",
+    technologies: ["VueJS","Tailwind","SweetAlert2"],
+    githubLink:"https://github.com/Rashini1998/Resto-App-VueJS"
   },
 ];
 
